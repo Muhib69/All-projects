@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid layout</title>
+   <style>
+    .box {
+    display: grid;
+    place-items: center;
+
+    width: 300px;
+    height: 200px;
+
+    border: 2px solid black;
+}
+        .container {
+            display: grid;
+            grid-template-areas: 
+                "header header header"
+                "aside main main"
+                "footer footer footer";
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-template-rows: auto 1fr auto;
+            height: 100vh;
+        }
+        .header {
+            grid-area: header;
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+        }
+        .aside {
+            grid-area: aside;
+            text-align: center;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+        .main {
+            grid-area: main;
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+        }
+        .footer {
+            grid-area: footer;
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="header">Header</div>
+        <div class="aside">Aside</div>
+        <div class="main">Main Content</div>
+        <div class="footer">Footer</div>
+</body>
+</html>

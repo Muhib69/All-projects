@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        .box {
+            width: 400px;
+            background: rgb(102, 70, 162);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 15px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 550px;
+            background-color: #0f1218;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        p {
+            text-align: center;
+            color: rgb(22, 35, 37);
+            margin-bottom: 25px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #4d6ba5;
+            border-radius: 5px;
+
+        }
+
+        .option {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+
+        .option a {
+            text-decoration: none;
+            color: rgb(37, 77, 40);
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            background: rgb(45, 41, 155);
+            color: rgb(63, 21, 21);
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: rgb(149, 149, 187);
+        }
+
+        .signup {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .signup a {
+            text-decoration: none;
+            color: rgb(186, 183, 199);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h1> <i>Welcome </i></h1>
+        <p><Strong>Login to your acount</Strong></p>
+        <form>
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your Email">
+            <br><br>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password">
+            <br><br>
+            <div class="option">
+                <label for="checkbox">
+                    <input type="checkbox" id="checkbox" name="checkbox">
+                    Remember me</label>
+                <a href="#">Forgot password?</a>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+        <div class="signup">
+            Don't have an account?
+            <a href="#">Sign up</a>
+        </div>
+    </div>
+</body>
+
+</html>

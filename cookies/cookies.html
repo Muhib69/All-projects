@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #842f50d7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+
+        }
+
+        .container {
+            background-color: rgb(203, 129, 200);
+            width: 450px;
+            height: 500px;
+            margin: 12px;
+            box-shadow: 0px 4px 15px;
+            border-radius: 20px;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 25px;
+        }
+
+        .logo {
+            margin-left: 20px;
+            width: 70px;
+            height: 70px;
+            background-color: #d7b3db;
+            border-radius: 15px;
+            font-size: 35px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .header h1 {
+            margin-bottom: 5px;
+        }
+
+        .header p {
+            color: #541b1b;
+        }
+
+        hr {
+            border-top: 1px solid #be2727;
+            margin: 25px;
+        }
+
+        .card {
+            border: 1px solid #671818;
+            margin-bottom: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+            padding: 10px;
+            gap: 20px;
+            display: flex;
+            align-items: center;
+            border-radius: 18px;
+        }
+
+        .icon {
+            width: 40px;
+            height: 40px;
+            background-color: #75e8b5;
+            border-radius: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 28px;
+        }
+
+        .card h3 {
+            margin-bottom: 5px;
+        }
+
+        .card {
+            color: #a5d9c9;
+            font-family: monospace;
+        }
+
+        .success {
+            margin-top: 30px;
+            margin-left: 20px;
+            margin-right: 20px;
+            background-color: #a98694;
+            color: #d23f3a;
+            padding: 10px;
+            border-radius: 10px;
+            font-size: 18px;
+            border: 1px solid #9ba1a4;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">🍪</div>
+            <div>
+                <h1>Cookies Manager</h1>
+                <p>KUCU Cookies Life Cycle Demo</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="card">
+            <div class="icon">➕</div>
+            <div>
+                <h3>Create Cookie</h3>
+                <p>setcookie("username1", "MK", time() + 3600)</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="icon">🔍</div>
+            <div>
+                <h3>Check Cookies</h3>
+                <p>isset($_COOKIE['username1'])</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="icon">🗑️</div>
+            <div>
+                <h3>Delete Cookie</h3>
+                <p>setcookie("username1", "", time() - 3600)</p>
+            </div>
+        </div>
+        <div class="success">
+            ✔ Cookie Created Successfully! Value: MK
+        </div>
+    </div>
+</body>
+</html>

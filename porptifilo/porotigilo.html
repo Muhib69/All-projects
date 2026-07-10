@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfilio page</title>
+</head>
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #8aa3bc;
+            color: #010308;
+            line-height: 1.7;
+        }
+        header {
+            background: linear-gradient(135deg, #0f172a 0%, #9fccd8 100%);
+            color: #2c1010;
+            padding: 20px 20px;
+            position: sticky;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 60px;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 10px 22px rgba(83, 101, 145, 0.15);
+        }
+        .brand {
+            color: #54c60d;
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .brand span {
+            color: #c39b2c;
+        }
+        .mwnu {
+            color: #a41010;
+            max-width: 100px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: right;
+        }
+        nav {
+            display: flex;
+            gap: 14px;
+            color: #590b0b;
+        }
+        a { 
+            color: #15227e;
+            font-weight: 500;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #451c48;
+        }
+        section{
+            padding: 50px 20px;
+            display: flex; 
+            height: 100vh;
+        }
+        .container{
+            text-align: center;
+            padding: 50px 20px;
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .img-container{
+            text-align: center;
+            padding: 20px;
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .img-container img{
+            max-width: 50%;
+            height: auto;
+            box-shadow: 0 0 20px rgba(127, 17, 17, 0.5);
+        }
+    </style>
+    <header>
+        <div class="brand">
+            <h4><span><i>CODE</i></span><i>ACCADIMY</i></h4>
+        </div>
+        <div class="menu">
+            <nav>
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Services</a>
+                <a href="">Gallery</a>
+                <a href="">Contact</a>
+            </nav>
+        </div>
+    </header>
+<section>
+    <div class="container">
+        <h1> <i>Welcome to Code Academy</i></h1>
+        <h6>Full Stack Developer</h6>
+        <p>Building modern, scalable, and user-friendly web applications.</p>
+    </div>
+    <div class="img-container">
+       <img src="images/image.JPG" alt="Code Academy">
+    </div>
+    </section>
+</body>
+</html>
